@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/attendancelayout"
+    tools:context=".AttendanceActivity">
+
+    <EditText
+        android:id="@+id/date_editext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editextbg"
+        android:editable="false"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/datepickerimg"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/ic_baseline_calendar_month_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/date_editext"
+        android:layout_marginTop="8dp" />
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/pb"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
